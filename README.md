@@ -14,3 +14,4 @@ Algorithm breakdown:
 - solve for theta 1
 - phi = theta1 + theta2 + theta3. Use this to solve for theta3
 
+*This is a work in progress*
