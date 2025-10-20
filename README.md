@@ -13,4 +13,5 @@ Algorithm breakdown:
 - phi = theta1 + theta2 + theta3. Use this to solve for theta3
 
 *This is a work in progress*
+
 Note: This current program uses analytical IK which need to be re-calculated for each robot and cannot be used for all robots. A new program is being developed using numerical IK which can be used for any robot.
