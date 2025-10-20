@@ -7,10 +7,11 @@ theta3 = Symbol('theta3')
 L1 = Symbol('L1')
 
 phi = 180
-x = input("Enter the X coordinate: ")
-y = input("Enter the Y coordinate: ")
-z = input("Enter the Z coordinate: ")
-l1 = input("Enter L1: ")
+
+#note (L1^2) >= (x^2) + (y^2)
+x = int(input("Enter the X coordinate: "))
+y = int(input("Enter the Y coordinate: "))
+l1 = int(input("Enter L1: "))
 
 def transform_matrix(alpha, a, d, theta):
     T = np.array([[c(theta), -s(theta), 0, a],
@@ -34,8 +35,13 @@ T0_2 = np.matmul(T0_1, T1_2)
 #Transform matrix from base to end effector
 T0_3 = np.matmul(T0_2, T2_3)
 
-#IK equations
-X_pos = T0_3[0][3]
-Y_pos = T0_3[1][3]
-Z_pos = T0_3[2][3]
+#Find theta 1,2,3 based on solved IK equations
+Theta2 = np.degrees(np.arctan(np.sqrt(((np.square(l1))/(np.square(x) + np.square(y)))-1)))
 
+Theta1 = np.degrees(np.arctan(y/x))
+
+Theta3 = phi-Theta1-Theta2
+
+print("Theta 1 is ", Theta1, " degrees")
+print("Theta 2 is ", Theta2, " degrees")
+print("Theta 3 is ", Theta3, " degrees")
