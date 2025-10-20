@@ -9,9 +9,7 @@ Algorithm breakdown:
 - use T0_3 to solve fr IK algebraicly
 - solve for IK by first finding X, Y, Z equations
 - square and add method first to find Theta_2
-- find K1 and K2, find r and Y(gamma), change of variable for K1 = rcos(Y) and K2 = rsin(Y)
-- sub into X and Y for K1 and K2, use cos(a+b) and sin(a+b) to simplify
-- solve for theta 1
+- solve for theta 1 by dividing Y equation by X equation
 - phi = theta1 + theta2 + theta3. Use this to solve for theta3
 
 *This is a work in progress*
