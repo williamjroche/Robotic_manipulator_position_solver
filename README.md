@@ -20,6 +20,7 @@ Note: This program is written in a jupyter notebook which ran in a miniconda env
 - set up DH table for robot
 - use roboticstoolbox to compute forward kinematics
 - use Levemberg-Marquadt Numerical solving method to find IK
+- joint angle speed control
 - write joint angles to motors
 
 *This is a work in progress*
