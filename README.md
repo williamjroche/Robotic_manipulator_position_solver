@@ -23,4 +23,7 @@ Note: This program is written in a jupyter notebook which ran in a miniconda env
 - joint angle speed control
 - write joint angles to motors
 
+Test video (not full robotic manipulator):
+https://youtube.com/shorts/shDkVHSkrxc?feature=share
+
 *This is a work in progress*
